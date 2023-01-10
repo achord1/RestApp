@@ -4,14 +4,54 @@
              x:Class="RestApp.Login">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Aqua">
+            <Frame BackgroundColor="Blue"  BorderColor="Aqua">
+                <Label HorizontalOptions="Center" TextColor="White" Text="Login" FontSize="20"/>
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Aqua" Offset="0.3"/>
+                            <GradientStop Color="Blue" Offset="0.5"/>
+                            <GradientStop Color="Aqua" Offset="0.7"/>
 
-            <Label BackgroundColor="AntiqueWhite" Text="Login" FontSize="20"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
 
             <Label Text="Username"/>
-            <Entry x:Name="entUsername" ></Entry>
+            <Entry x:Name="entUsername" >
+                <Entry.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Green" Offset="0.2"/>
+                            <GradientStop Color="GreenYellow" Offset="0.5"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Entry.Background>
+            </Entry>
             <Label Text="Password"/>
-            <Entry x:Name="entPassword"></Entry>
-            <Button Text="Sign in" Clicked="Logg"/>
+            <Entry x:Name="entPassword">
+                <Entry.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Green" Offset="0.2"/>
+                            <GradientStop Color="GreenYellow" Offset="0.5"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Entry.Background>
+            </Entry>
+            <Button HorizontalOptions="Center" Text="Sign in" Clicked="Logg"/>
+            <Label Text="" x:Name="lblLogin" ></Label>
+                <StackLayout.Background>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Color="Aqua" Offset="0.1"/>
+                        <GradientStop Color="White" Offset="0.4"/>
+                        <GradientStop Color="Aqua" Offset="0.7"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </StackLayout.Background>
 
 
 

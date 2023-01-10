@@ -4,11 +4,14 @@
              x:Class="RestApp.MainPage">
 
     <StackLayout>
+        <Label HorizontalOptions="Center" VerticalOptions="Center" Text="The Resturant" FontSize="50" ></Label>
+       
         <StackLayout.Background>
             <LinearGradientBrush>
                 <GradientStopCollection>
+                    <GradientStop Color="Aqua" Offset="0.2"/>
                     <GradientStop Color="Blue" Offset="0.5"/>
-                    <GradientStop Color="Green" Offset="0.8"/>
+                    <GradientStop Color="Aqua" Offset="0.8"/>
                 </GradientStopCollection>
             </LinearGradientBrush>
         </StackLayout.Background>

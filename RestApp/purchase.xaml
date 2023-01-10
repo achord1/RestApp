@@ -3,17 +3,110 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RestApp.purchase">
   <ContentPage.Content>
-      <StackLayout>
-            <Label Text="Orders" FontSize="20"/>
-            <Label Text="Burger" />
+      <StackLayout BackgroundColor="Aqua">
+            <Frame BackgroundColor="Blue" BorderColor="Aqua">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Aqua" Offset="0.3"/>
+                            <GradientStop Color="Blue" Offset="0.5"/>
+                            <GradientStop Color="Aqua" Offset="0.7"/>
+
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Label TextColor="White" HorizontalOptions="Center" Text="Orders" FontSize="20"/>
+
+            </Frame>
+            <Label Text="Burger R20.00" />
 
 
-            <Switch x:Name="Burger"></Switch>
+            <Switch x:Name="swBurger"></Switch>
+            <Image HorizontalOptions="Start" WidthRequest="120"  Source="Burger.JPG" />
+            <Label Text="how many would you like"></Label>
+          
+          <Entry x:Name="edtBurg">
+                <Entry.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Green" Offset="0.2"/>
+                            <GradientStop Color="GreenYellow" Offset="0.5"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Entry.Background>
+          </Entry>
+            <Label Text="Chips R10.00" />
+            <Switch x:Name="swChips"></Switch>
 
-            <Label Text="Chips" />
-            <Switch x:Name="Chips"></Switch>
+            <Image HorizontalOptions="Start" HeightRequest="80" WidthRequest="80"  Visual="" Source="Chips.JFIF"></Image>
+            <Label Text="how many would you like"></Label>
 
-            
+            <Entry x:Name="edtChips" >
+                <Entry.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Green" Offset="0.2"/>
+                            <GradientStop Color="GreenYellow" Offset="0.5"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Entry.Background>
+            </Entry>
+
+
+
+
+            <Label Text="Water R5.00" />
+            <Switch x:Name="swWater"></Switch>
+            <Image HorizontalOptions="Start" WidthRequest="120"  Source="OIP2.JFIF" HeightRequest="70" />
+            <Label Text="how many would you like"></Label>
+
+            <Entry x:Name="edtWater">
+                <Entry.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Green" Offset="0.2"/>
+                            <GradientStop Color="GreenYellow" Offset="0.5"/>
+                            
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Entry.Background>
+            </Entry>
+          
+
+            <Label Text="Wrap R30.00" />
+            <Switch x:Name="swWrap"></Switch>
+            <Image HorizontalOptions="Start" HeightRequest="90"  Visual="" Source="OIP.JFIF"></Image>
+
+            <Label Text="how many would you like"></Label>
+
+            <Entry x:Name="edtWrap">
+                <Entry.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="Green" Offset="0.2"/>
+                            <GradientStop Color="GreenYellow" Offset="0.5"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Entry.Background>
+            </Entry>
+
+            <Button  HorizontalOptions="Center" x:Name="bPurchase"  Clicked="goPurchase"  Text="Purchase" >
+        
+            </Button>
+            <Label x:Name="lblPurchase"  FontSize="Large" ></Label>
+
+            <StackLayout.Background>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Color="Aqua" Offset="0.1"/>
+                        <GradientStop Color="White" Offset="0.4"/>
+                        <GradientStop Color="Aqua" Offset="0.7"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </StackLayout.Background>
+
+
 
         </StackLayout>
   </ContentPage.Content>

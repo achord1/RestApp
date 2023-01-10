@@ -20,11 +20,18 @@ namespace RestApp
         private void Logg(object sender, EventArgs e)
         {
 
+
             string sUsername = entUsername.Text;
             string sPassword = entPassword.Text;
 
-            if (sUsername == "User" && sPassword == "Pass") {
+            if (sUsername == "User" && sPassword == "Pass")
+            {
                 App.Current.MainPage = new purchase();
+            }
+            else  {
+                lblLogin.Text = "Please type in a correct Username and Password.";
+                lblLogin.BackgroundColor= Color.MediumVioletRed;
+                lblLogin.TextColor= Color.White;
             }
         }
     }
