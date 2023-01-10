@@ -4,7 +4,7 @@
              x:Class="RestApp.MainPage">
 
     <StackLayout>
-        <Label HorizontalOptions="Center" VerticalOptions="Center" Text="The Resturant" FontSize="50" ></Label>
+        <Label HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Text="The Resturant" FontSize="50" ></Label>
        
         <StackLayout.Background>
             <LinearGradientBrush>
